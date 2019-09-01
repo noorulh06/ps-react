@@ -32,11 +32,11 @@ function generate(paths) {
                                     return getComponentData(paths, componentName);
                                 }
                                 catch(error) {
-                                    console.log('An error occured while attempting to generate metadata for '
+                                    console.log(chalk.red('An error occured while attempting to generate metadata for '
                                         + componentName
                                         + '. '
-                                        + error
-                                    );
+                                        + error.stack
+                                    ));
                                 }
                             });
     writeFile(paths.output, "export default " + JSON.stringify(

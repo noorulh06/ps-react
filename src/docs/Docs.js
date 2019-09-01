@@ -20,7 +20,7 @@ export default class Docs extends React.Component {
     render() {
         const {route} = this.state;
         const component = route ?
-                            componentData.fileter(
+                            componentData.filter(
                                 component => component.name === route
                             )[0] :
                             componentData[0];

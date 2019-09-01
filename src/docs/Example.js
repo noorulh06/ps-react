@@ -11,7 +11,7 @@ class Example extends React.Component {
     toggleCode = event => {
         event.preventDefault();
         this.setState(prevState => {
-            return {showCode : !prevState.shwCode};
+            return {showCode : !prevState.showCode};
         });
     }
 

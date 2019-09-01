@@ -52,6 +52,7 @@
     "sass-loader": "7.2.0",
     "semver": "6.3.0",
     "style-loader": "1.0.0",
+    "styled-components": "^1.4.5",
     "terser-webpack-plugin": "1.4.1",
     "ts-pnp": "1.1.2",
     "url-loader": "2.1.0",
@@ -61,10 +62,10 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "scripts": {
-    "prestart" : "npm run gen:docs",
+    "prestart": "npm run gen:docs",
     "start": "npm-run-all --parallel start:docs gen:docs-watch",
     "start:docs": "node scripts/start.js",
-    "gen:docs" : "node scripts/generateComponentData.js",
+    "gen:docs": "node scripts/generateComponentData.js",
     "gen:docs-watch": "npm run gen:docs -- --watch",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
